@@ -1,0 +1,56 @@
+{
+  "id": "c4282260-de2e-42a9-9915-39ee17ca6bd9",
+  "uid": "est-voluptatem-iste",
+  "type": "menu",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Target bricks-and-clicks systems",
+        "spans": []
+      }
+    ],
+    "topPromoBanner": "unleash virtual e-services",
+    "menu_links": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "In sint elit ex aliquip do in consequat est minim incididunt non ullamco Lorem. Dolore culpa eu sit dolore sit voluptate nulla duis ad nisi et nulla. Non in exercitation consequat eu ut eu aute quis nulla quis eu.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Laborum labore minim cupidatat veniam velit in qui. Et laborum cillum voluptate amet nulla magna eu ex exercitation do ullamco mollit nostrud laboris deserunt. Et culpa aliquip culpa aliquip.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Et ea exercitation velit esse aliquip. Ullamco adipisicing dolore nostrud amet proident et voluptate est ipsum exercitation velit. Adipisicing cillum consequat ullamco amet pariatur tempor minim culpa qui.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ]
+  }
+}

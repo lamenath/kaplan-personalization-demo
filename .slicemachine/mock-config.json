@@ -1,0 +1,10 @@
+{
+  "slices": {
+    "HeroBanner": {},
+    "PromoSectionImageTiles": {}
+  },
+  "_cts": {
+    "home-page": {},
+    "menu": {}
+  }
+}
