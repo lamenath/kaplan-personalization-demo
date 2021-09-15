@@ -1,7 +1,25 @@
 {
   "slices": {
     "HeroBanner": {},
-    "PromoSectionImageTiles": {}
+    "PromoSectionImageTiles": {},
+    "ProductListWithCta": {
+      "default-slice": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   },
   "_cts": {
     "home-page": {},

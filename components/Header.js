@@ -135,7 +135,6 @@ function classNames(...classes) {
 
 export default function Header({ menu = [], categories =[] }){
   const [open, setOpen] = useState(false)
-  console.log(menu.data)
 
   return (
     <div className="bg-white">

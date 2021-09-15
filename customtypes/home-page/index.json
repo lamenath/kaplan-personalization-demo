@@ -12,6 +12,9 @@
           "choices": {
             "promo_section_image_tiles": {
               "type": "SharedSlice"
+            },
+            "product_list_with_cta": {
+              "type": "SharedSlice"
             }
           }
         }
