@@ -24,6 +24,21 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "image": {
+          "config": {
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          },
+          "type": "Image"
+        },
+        "CTA": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
       },
       "items": {}

@@ -1,8 +1,9 @@
 import React from "react";
 import Head from "next/head";
-import Header from './Header'
+import Header from './Header';
+import Footer from './Footer';
 
-const Layout = ({ children, menu, categories }) => {
+const Layout = ({ children, menu, footer, categories }) => {
   return (
     <div>
       <Head>
@@ -10,6 +11,7 @@ const Layout = ({ children, menu, categories }) => {
       </Head>
       <Header menu={menu} categories={categories}/>
       <main>{children}</main>
+      <Footer footer={footer}/>
     </div>
   )
 };

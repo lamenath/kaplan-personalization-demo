@@ -20,6 +20,7 @@
     "@heroicons/react": "^1.0.4",
     "@prismicio/client": "^4.0.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/forms": "^0.3.3",
     "js-cookie": "^2.2.1",
     "next": "^10.0.8",
     "next-slicezone": "^0.1.0",

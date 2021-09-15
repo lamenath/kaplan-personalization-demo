@@ -15,6 +15,12 @@
             },
             "product_list_with_cta": {
               "type": "SharedSlice"
+            },
+            "hero_banner": {
+              "type": "SharedSlice"
+            },
+            "promo_section_fading_background_testimonials": {
+              "type": "SharedSlice"
             }
           }
         }

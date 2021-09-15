@@ -34,8 +34,8 @@
         "topProduct": {
           "type": "IntegrationFields",
           "config": {
-              "catalog": "demo-sm-next-ecom--products",
-              "label": "Top Product"
+            "catalog": "demo-sm-next-ecom--products",
+            "label": "Top Product"
           }
         }
       }

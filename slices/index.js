@@ -2,4 +2,5 @@
 
 export { default as HeroBanner } from './HeroBanner'
 export { default as ProductListWithCta } from './ProductListWithCta'
+export { default as PromoSectionFadingBackgroundTestimonials } from './PromoSectionFadingBackgroundTestimonials'
 export { default as PromoSectionImageTiles } from './PromoSectionImageTiles'

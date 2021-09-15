@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 const Page = (props) => {
   return (
-    <Layout menu={props.menu} categories={props.categories}>
+    <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
       <SliceZone {...props} resolver={resolver} />
     </Layout>
   );
