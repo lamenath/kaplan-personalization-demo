@@ -82,7 +82,6 @@ const ProductListWithCta = ({ slice }) => (
         </div>
       </div>
     </div>
-  )
   </section>
 )
 

@@ -11,7 +11,7 @@ const Layout = ({ children, menu, categories }) => {
       <Header menu={menu} categories={categories}/>
       <main>{children}</main>
     </div>
-  );
+  )
 };
 
 export default Layout;
