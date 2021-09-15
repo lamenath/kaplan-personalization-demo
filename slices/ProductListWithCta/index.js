@@ -2,46 +2,6 @@ import React from 'react'
 import { RichText } from 'prismic-reactjs'
 import SliceResolver from '../../sm-resolver'
 
-const products = [
-  {
-    id: 1,
-    name: 'SmartPic 2000',
-    color: 'Black',
-    price: '$7500',
-    href: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'SmartPic 2000',
-  },
-  {
-    id: 2,
-    name: 'Artman 500',
-    color: 'Black',
-    price: '$5000',
-    href: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1516961642265-531546e84af2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    imageAlt: 'Artman 500',
-  },
-  {
-    id: 3,
-    name: 'Quicky v2',
-    color: 'Black',
-    price: '$2000',
-    href: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1516962126636-27ad087061cc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGNhbWVyYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    imageAlt: 'Quicky v2',
-  },
-  {
-    id: 4,
-    name: 'PicBoy Pocket',
-    color: 'Black',
-    price: '$950',
-    href: '#',
-    imageSrc: 'https://images.unsplash.com/photo-1566863244489-a5e7946f46f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fGNhbWVyYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
-    imageAlt: 'PocketPicBoy',
-  },
-  // More products...
-]
-
 const ProductListWithCta = ({ slice }) => (
   <section>
     <div className="bg-white">
