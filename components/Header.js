@@ -135,7 +135,7 @@ function classNames(...classes) {
 
 export default function Header({ menu = [], categories =[] }){
   const [open, setOpen] = useState(false)
-  console.log(categories[0].featured)
+  console.log(menu.data)
 
   return (
     <div className="bg-white">
@@ -300,8 +300,8 @@ export default function Header({ menu = [], categories =[] }){
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt=""
+                    src={menu.data.logo.url}
+                    alt={menu.data.logo.alt}
                   />
                 </a>
               </div>

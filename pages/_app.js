@@ -40,7 +40,7 @@ export default class MyApp extends NextApp {
         sections: category.data.body,
       }
     })
-    console.log(categories.results[0].data)
+    
     return {
       props: {
         menu: menu,
