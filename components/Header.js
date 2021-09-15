@@ -6,135 +6,136 @@ import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
 
-const navigation = {
-  categories: [
-    {
-      id: 'women',
-      name: 'Women',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
-          imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
-        },
-        {
-          name: 'Basic Tees',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
-          imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
-        },
-      ],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Dresses', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Denim', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
-          ],
-        },
-        {
-          id: 'accessories',
-          name: 'Accessories',
-          items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
-          ],
-        },
-        {
-          id: 'brands',
-          name: 'Brands',
-          items: [
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Significant Other', href: '#' },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'men',
-      name: 'Men',
-      featured: [
-        {
-          name: 'New Arrivals',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
-          imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
-        },
-        {
-          name: 'Artwork Tees',
-          href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
-          imageAlt:
-            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
-        },
-      ],
-      sections: [
-        {
-          id: 'clothing',
-          name: 'Clothing',
-          items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
-          ],
-        },
-        {
-          id: 'accessories',
-          name: 'Accessories',
-          items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
-          ],
-        },
-        {
-          id: 'brands',
-          name: 'Brands',
-          items: [
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-          ],
-        },
-      ],
-    },
-  ],
-  pages: [
-    { name: 'Company', href: '#' },
-    { name: 'Stores', href: '#' },
-  ],
-}
+// const navigation = {
+//   categories: [
+//     {
+//       id: 'women',
+//       name: 'Women',
+//       featured: [
+//         {
+//           name: 'New Arrivals',
+//           href: '#',
+//           imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+//           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
+//         },
+//         {
+//           name: 'Basic Tees',
+//           href: '#',
+//           imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+//           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
+//         },
+//       ],
+//       sections: [
+//         {
+//           id: 'clothing',
+//           name: 'Clothing',
+//           items: [
+//             { name: 'Tops', href: '#' },
+//             { name: 'Dresses', href: '#' },
+//             { name: 'Pants', href: '#' },
+//             { name: 'Denim', href: '#' },
+//             { name: 'Sweaters', href: '#' },
+//             { name: 'T-Shirts', href: '#' },
+//             { name: 'Jackets', href: '#' },
+//             { name: 'Activewear', href: '#' },
+//             { name: 'Browse All', href: '#' },
+//           ],
+//         },
+//         {
+//           id: 'accessories',
+//           name: 'Accessories',
+//           items: [
+//             { name: 'Watches', href: '#' },
+//             { name: 'Wallets', href: '#' },
+//             { name: 'Bags', href: '#' },
+//             { name: 'Sunglasses', href: '#' },
+//             { name: 'Hats', href: '#' },
+//             { name: 'Belts', href: '#' },
+//           ],
+//         },
+//         {
+//           id: 'brands',
+//           name: 'Brands',
+//           items: [
+//             { name: 'Full Nelson', href: '#' },
+//             { name: 'My Way', href: '#' },
+//             { name: 'Re-Arranged', href: '#' },
+//             { name: 'Counterfeit', href: '#' },
+//             { name: 'Significant Other', href: '#' },
+//           ],
+//         },
+//       ],
+//     },
+//     {
+//       id: 'men',
+//       name: 'Men',
+//       featured: [
+//         {
+//           name: 'New Arrivals',
+//           href: '#',
+//           imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
+//           imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
+//         },
+//         {
+//           name: 'Artwork Tees',
+//           href: '#',
+//           imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
+//           imageAlt:
+//             'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
+//         },
+//       ],
+//       sections: [
+//         {
+//           id: 'clothing',
+//           name: 'Clothing',
+//           items: [
+//             { name: 'Tops', href: '#' },
+//             { name: 'Pants', href: '#' },
+//             { name: 'Sweaters', href: '#' },
+//             { name: 'T-Shirts', href: '#' },
+//             { name: 'Jackets', href: '#' },
+//             { name: 'Activewear', href: '#' },
+//             { name: 'Browse All', href: '#' },
+//           ],
+//         },
+//         {
+//           id: 'accessories',
+//           name: 'Accessories',
+//           items: [
+//             { name: 'Watches', href: '#' },
+//             { name: 'Wallets', href: '#' },
+//             { name: 'Bags', href: '#' },
+//             { name: 'Sunglasses', href: '#' },
+//             { name: 'Hats', href: '#' },
+//             { name: 'Belts', href: '#' },
+//           ],
+//         },
+//         {
+//           id: 'brands',
+//           name: 'Brands',
+//           items: [
+//             { name: 'Re-Arranged', href: '#' },
+//             { name: 'Counterfeit', href: '#' },
+//             { name: 'Full Nelson', href: '#' },
+//             { name: 'My Way', href: '#' },
+//           ],
+//         },
+//       ],
+//     },
+//   ],
+//   // pages: [
+//   //   { name: 'Company', href: '#' },
+//   //   { name: 'Stores', href: '#' },
+//   // ],
+// }
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ menu = [] }) {
+export default function Header({ menu = [], categories =[] }){
   const [open, setOpen] = useState(false)
+  console.log(categories[0].featured)
 
   return (
     <div className="bg-white">
@@ -178,7 +179,7 @@ export default function Header({ menu = [] }) {
               <Tab.Group as="div" className="mt-2">
                 <div className="border-b border-gray-200">
                   <Tab.List className="-mb-px flex px-4 space-x-8">
-                    {navigation.categories.map((category) => (
+                    {categories.map((category) => (
                       <Tab
                         key={category.name}
                         className={({ selected }) =>
@@ -194,17 +195,17 @@ export default function Header({ menu = [] }) {
                   </Tab.List>
                 </div>
                 <Tab.Panels as={Fragment}>
-                  {navigation.categories.map((category) => (
+                  {categories.map((category) => (
                     <Tab.Panel key={category.name} className="pt-10 pb-8 px-4 space-y-10">
                       <div className="grid grid-cols-2 gap-x-4">
                         {category.featured.map((item) => (
-                          <div key={item.name} className="group relative text-sm">
+                          <div key={item.title} className="group relative text-sm">
                             <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
-                              <img src={item.imageSrc} alt={item.imageAlt} className="object-center object-cover" />
+                              <img src={item.image.url} alt={item.image.alt} className="object-center object-cover" />
                             </div>
-                            <a href={item.href} className="mt-6 block font-medium text-gray-900">
+                            <a href={item.href.url} className="mt-6 block font-medium text-gray-900">
                               <span className="absolute z-10 inset-0" aria-hidden="true" />
-                              {item.name}
+                              {item.title}
                             </a>
                             <p aria-hidden="true" className="mt-1">
                               Shop now
@@ -213,22 +214,22 @@ export default function Header({ menu = [] }) {
                         ))}
                       </div>
                       {category.sections.map((section) => (
-                        <div key={section.name}>
-                          <p id={`${category.id}-${section.id}-heading-mobile`} className="font-medium text-gray-900">
-                            {section.name}
+                        <div key={section.primary.section_name}>
+                          <p id={`${category.id}-${section.primary.section_id}-heading-mobile`} className="font-medium text-gray-900">
+                            {section.primary.section_name}
                           </p>
                           <ul
                             role="list"
-                            aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
+                            aria-labelledby={`${category.id}-${section.primary.section_id}-heading-mobile`}
                             className="mt-6 flex flex-col space-y-6"
                           >
-                            {section.items.map((item) => (
-                              <li key={item.name} className="flow-root">
-                                <a href={item.href} className="-m-2 p-2 block text-gray-500">
-                                  {item.name}
-                                </a>
-                              </li>
-                            ))}
+                          {section.items.map((item) => (
+                            <li key={item.sub_section_name} className="flow-root">
+                              <a href={item.sub_section_href.url} className="-m-2 p-2 block text-gray-500">
+                                {item.sub_section_name}
+                              </a>
+                            </li>
+                          ))}
                           </ul>
                         </div>
                       ))}
@@ -238,7 +239,7 @@ export default function Header({ menu = [] }) {
               </Tab.Group>
 
               <div className="border-t border-gray-200 py-6 px-4 space-y-6">
-                {navigation.pages.map((page) => (
+                {menu.data.pages.map((page) => (
                   <div key={page.name} className="flow-root">
                     <a href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
                       {page.name}
@@ -308,7 +309,7 @@ export default function Header({ menu = [] }) {
               {/* Flyout menus */}
               <Popover.Group className="z-40 hidden lg:ml-8 lg:block lg:self-stretch">
                 <div className="h-full flex space-x-8">
-                  {navigation.categories.map((category) => (
+                  {categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
                         <>
@@ -343,17 +344,17 @@ export default function Header({ menu = [] }) {
                                   <div className="grid grid-cols-2 gap-y-10 gap-x-8 py-16">
                                     <div className="col-start-2 grid grid-cols-2 gap-x-8">
                                       {category.featured.map((item) => (
-                                        <div key={item.name} className="group relative text-base sm:text-sm">
+                                        <div key={item.title} className="group relative text-base sm:text-sm">
                                           <div className="aspect-w-1 aspect-h-1 rounded-lg bg-gray-100 overflow-hidden group-hover:opacity-75">
                                             <img
-                                              src={item.imageSrc}
-                                              alt={item.imageAlt}
+                                              src={item.image.url}
+                                              alt={item.image.alt}
                                               className="object-center object-cover"
                                             />
                                           </div>
-                                          <a href={item.href} className="mt-6 block font-medium text-gray-900">
+                                          <a href={item.href.url} className="mt-6 block font-medium text-gray-900">
                                             <span className="absolute z-10 inset-0" aria-hidden="true" />
-                                            {item.name}
+                                            {item.title}
                                           </a>
                                           <p aria-hidden="true" className="mt-1">
                                             Shop now
@@ -363,19 +364,19 @@ export default function Header({ menu = [] }) {
                                     </div>
                                     <div className="row-start-1 grid grid-cols-3 gap-y-10 gap-x-8 text-sm">
                                       {category.sections.map((section) => (
-                                        <div key={section.name}>
-                                          <p id={`${section.name}-heading`} className="font-medium text-gray-900">
-                                            {section.name}
+                                        <div key={section.primary.section_name}>
+                                          <p id={`${section.primary.section_name}-heading`} className="font-medium text-gray-900">
+                                            {section.primary.section_name}
                                           </p>
                                           <ul
                                             role="list"
-                                            aria-labelledby={`${section.name}-heading`}
+                                            aria-labelledby={`${section.primary.section_name}-heading`}
                                             className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                           >
                                             {section.items.map((item) => (
-                                              <li key={item.name} className="flex">
-                                                <a href={item.href} className="hover:text-gray-800">
-                                                  {item.name}
+                                              <li key={item.sub_section_name} className="flex">
+                                                <a href={item.sub_section_href.url} className="hover:text-gray-800">
+                                                  {item.sub_section_name}
                                                 </a>
                                               </li>
                                             ))}
@@ -393,7 +394,7 @@ export default function Header({ menu = [] }) {
                     </Popover>
                   ))}
 
-                  {navigation.pages.map((page) => (
+                  {menu.data.pages.map((page) => (
                     <a
                       key={page.name}
                       href={page.href}
@@ -454,25 +455,4 @@ export default function Header({ menu = [] }) {
       </header>
     </div>
   )
-}
-
-const Links = ({menuLinks}) => {
-  if (menuLinks) {
-    return (
-      <nav>
-        <ul>
-          {menuLinks.map((menuLink, index) => (
-            <li key={`menulink-${index}`}>
-              <a href={Link.url(menuLink.link)}>
-                {RichText.asText(menuLink.label)}
-              </a>
-            </li>
-          ))}
-        </ul>
-        <style jsx>{`
-          `}</style>
-      </nav>
-    )
-  }
-  return null
 }
