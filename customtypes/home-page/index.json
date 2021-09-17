@@ -21,6 +21,9 @@
             },
             "promo_section_fading_background_testimonials": {
               "type": "SharedSlice"
+            },
+            "product_overview_with_image_grid": {
+              "type": "SharedSlice"
             }
           }
         }

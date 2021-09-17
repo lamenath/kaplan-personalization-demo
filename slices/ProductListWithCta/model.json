@@ -37,6 +37,16 @@
             "catalog": "demo-sm-next-ecom--products",
             "label": "Top Product"
           }
+        },
+        "productLink": {
+          "config": {
+            "label": "Product Link",
+            "select": "document",
+            "customtypes": [
+              "page"
+            ]
+          },
+          "type": "Link"
         }
       }
     }

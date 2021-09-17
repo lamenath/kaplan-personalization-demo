@@ -24,7 +24,7 @@ const ProductListWithCta = ({ slice }) => (
                 />
               </div>
               <h3 className="mt-4 text-sm text-gray-700">
-                <a href={product.topProduct.href}>
+                <a href={product.productLink.url}>
                   <span className="absolute inset-0" />
                   {product.topProduct.name}
                 </a>

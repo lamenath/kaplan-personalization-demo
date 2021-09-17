@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _DefaultSlice = () => <MyComponent slice={{"variation":"default-slice","name":"Default slice","slice_type":"hero_banner","items":[],"primary":{"title":"revolutionize intuitive e-services","description":"repurpose strategic niches","image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"},"CTA":"utilize strategic convergence"},"id":"_DefaultSlice"}} />
+export const _DefaultSlice = () => <MyComponent slice={{"variation":"default-slice","name":"Default slice","slice_type":"hero_banner","items":[],"primary":{"title":"e-enable 24/7 paradigms","description":"evolve robust portals","image":{"dimensions":{"width":900,"height":500},"alt":"Placeholder image","copyright":null,"url":"https://images.unsplash.com/photo-1587840171670-8b850147754e?w=900&h=500&fit=crop"},"CTA":"synthesize revolutionary synergies"},"id":"_DefaultSlice"}} />
 _DefaultSlice.storyName = 'Default slice'

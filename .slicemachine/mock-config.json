@@ -2,11 +2,17 @@
   "slices": {
     "HeroBanner": {},
     "PromoSectionImageTiles": {},
-    "ProductListWithCta": {},
-    "PromoSectionFadingBackgroundTestimonials": {}
+    "ProductListWithCta": {
+      "default-slice": {
+        "items": {}
+      }
+    },
+    "PromoSectionFadingBackgroundTestimonials": {},
+    "ProductOverviewWithImageGrid": {}
   },
   "_cts": {
     "home-page": {},
-    "menu": {}
+    "menu": {},
+    "page": {}
   }
 }

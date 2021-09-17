@@ -1,0 +1,40 @@
+{
+  "id": "product_overview_with_image_grid",
+  "type": "SharedSlice",
+  "name": "ProductOverviewWithImageGrid",
+  "description": "ProductOverviewWithImageGrid",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "ProductOverviewWithImageGrid",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "single": "paragraph",
+            "label": "Description",
+            "placeholder": "A nice description of your feature"
+          }
+        },
+        "product": {
+          "type": "IntegrationFields",
+          "config": {
+            "catalog": "demo-sm-next-ecom--products",
+            "label": "Top Product"
+          }
+        }
+      }
+    }
+  ]
+}
