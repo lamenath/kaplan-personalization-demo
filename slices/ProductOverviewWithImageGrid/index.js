@@ -4,6 +4,10 @@ import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/solid'
 import { RadioGroup } from '@headlessui/react'
 
+//test of overriding html (serializer)
+import htmlSerializer from './../../tools/htmlSerializer'
+
+
 const product = {
   name: 'Basic Tee 6-Pack',
   price: '$192',
@@ -71,11 +75,10 @@ export default function ProductOverviewWithImageGrid({ slice }) {
       <div className="pt-6">
         <nav aria-label="Breadcrumb">
           <ol role="list" className="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
-            {product.breadcrumbs.map((breadcrumb) => (
-              <li key={breadcrumb.id}>
+              <li>
                 <div className="flex items-center">
-                  <a href={breadcrumb.href} className="mr-2 text-sm font-medium text-gray-900">
-                    {breadcrumb.name}
+                  <a href="#" className="mr-2 text-sm font-medium text-gray-900">
+                    {slice.primary.product.category}
                   </a>
                   <svg
                     width={16}
@@ -90,7 +93,24 @@ export default function ProductOverviewWithImageGrid({ slice }) {
                   </svg>
                 </div>
               </li>
-            ))}
+              <li>
+                <div className="flex items-center">
+                  <a href="#" className="mr-2 text-sm font-medium text-gray-900">
+                    {slice.primary.product.subcategory}
+                  </a>
+                  <svg
+                    width={16}
+                    height={20}
+                    viewBox="0 0 16 20"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    className="w-4 h-5 text-gray-300"
+                  >
+                    <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+                  </svg>
+                </div>
+              </li>
             <li className="text-sm">
               <a href={product.href} aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">
                 {slice.primary.product.name}
@@ -277,7 +297,8 @@ export default function ProductOverviewWithImageGrid({ slice }) {
 
           <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
             {/* Description and details */}
-            <div>
+            <RichText render={slice.primary.description} htmlSerializer={htmlSerializer} />
+            {/* <div>
               <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
@@ -305,7 +326,7 @@ export default function ProductOverviewWithImageGrid({ slice }) {
               <div className="mt-4 space-y-6">
                 <p className="text-sm text-gray-600">{product.details}</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
