@@ -20,9 +20,9 @@ const htmlSerializer = function(type, element, content, children, key) {
       return React.createElement('h2', propsWithUniqueKey(props, key), children);
       
     case Elements.heading3: // Heading 3
-    props = Object.assign({
-      className: 'mt-10',
-    })
+      props = Object.assign({
+        className: 'mt-10 text-sm font-medium text-gray-900',
+      })
       return React.createElement('h3', propsWithUniqueKey(props, key), children);
       
     case Elements.heading4: // Heading 4
@@ -47,6 +47,9 @@ const htmlSerializer = function(type, element, content, children, key) {
       return React.createElement('em', propsWithUniqueKey(props, key), children);
       
     case Elements.listItem: // Unordered List Item
+      props = Object.assign({
+        className: 'text-gray-600',
+      })
       return React.createElement('li', propsWithUniqueKey(props, key), children);
       
     case Elements.oListItem: // Ordered List Item

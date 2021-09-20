@@ -16,6 +16,18 @@
               "patternType": "PARAGRAPH",
               "blocks": 1
             }
+          },
+          "highlights": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "details": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
           }
         }
       }

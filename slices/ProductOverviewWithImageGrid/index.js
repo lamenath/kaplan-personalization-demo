@@ -297,12 +297,13 @@ export default function ProductOverviewWithImageGrid({ slice }) {
 
           <div className="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
             {/* Description and details */}
-            <RichText render={slice.primary.description} htmlSerializer={htmlSerializer} />
-            {/* <div>
+            {/* <RichText render={slice.primary.description} htmlSerializer={htmlSerializer} /> */}
+            {/* <RichText render={slice.primary.description} /> */}
+            <div>
               <h3 className="sr-only">Description</h3>
 
               <div className="space-y-6">
-                <p className="text-base text-gray-900">{product.description}</p>
+                <p className="text-base text-gray-900">{RichText.asText(slice.primary.description)}</p>
               </div>
             </div>
 
@@ -310,13 +311,14 @@ export default function ProductOverviewWithImageGrid({ slice }) {
               <h3 className="text-sm font-medium text-gray-900">Highlights</h3>
 
               <div className="mt-4">
-                <ul role="list" className="pl-4 list-disc text-sm space-y-2">
+                <RichText render={slice.primary.highlights} htmlSerializer={htmlSerializer} />
+                {/* <ul role="list" className="pl-4 list-disc text-sm space-y-2">
                   {product.highlights.map((highlight) => (
                     <li key={highlight} className="text-gray-400">
                       <span className="text-gray-600">{highlight}</span>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
 
@@ -324,9 +326,9 @@ export default function ProductOverviewWithImageGrid({ slice }) {
               <h2 className="text-sm font-medium text-gray-900">Details</h2>
 
               <div className="mt-4 space-y-6">
-                <p className="text-sm text-gray-600">{product.details}</p>
+                <p className="text-sm text-gray-600">{RichText.asText(slice.primary.details)}</p>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
