@@ -5,7 +5,24 @@
     "ProductListWithCta": {},
     "PromoSectionFadingBackgroundTestimonials": {},
     "ProductOverviewWithImageGrid": {},
-    "PromoSectionFullWidthWithOverlappingImageTiles": {}
+    "PromoSectionFullWidthWithOverlappingImageTiles": {
+      "default-slice": {
+        "primary": {
+          "title1": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "title2": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   },
   "_cts": {
     "home-page": {},

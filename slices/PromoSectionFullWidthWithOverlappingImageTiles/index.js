@@ -12,9 +12,9 @@ const PromoSectionFullWidthWithOverlappingImageTiles = ({ slice }) => (
             <div className="relative pt-48 pb-16 sm:pb-24">
               <div>
                 <h2 id="sale-heading" className="text-4xl font-extrabold tracking-tight text-white md:text-5xl">
-                  {RichText.render(slice.primary.title1)}
+                  {RichText.asText(slice.primary.title1)}
                   <br />
-                  {RichText.render(slice.primary.title2)}
+                  {RichText.asText(slice.primary.title2)}
                 </h2>
                 <div className="mt-6 text-base">
                   <a href={Link.url(slice.primary.ctaLink)} className="font-semibold text-white">
