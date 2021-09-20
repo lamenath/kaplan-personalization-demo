@@ -5,39 +5,35 @@
     "slice_type": "promo_section_fading_background_testimonials",
     "items": [
       {
-        "quote": "repurpose clicks-and-mortar e-business",
-        "attribution": "incentivize clicks-and-mortar e-business"
+        "quote": "generate frictionless e-services",
+        "attribution": "repurpose 24/7 bandwidth"
       },
       {
-        "quote": "exploit best-of-breed supply-chains",
-        "attribution": "enhance customized architectures"
+        "quote": "enable compelling platforms",
+        "attribution": "cultivate sexy supply-chains"
       },
       {
-        "quote": "repurpose best-of-breed technologies",
-        "attribution": "reinvent magnetic web-readiness"
-      },
-      {
-        "quote": "leverage end-to-end interfaces",
-        "attribution": "synthesize scalable deliverables"
+        "quote": "morph B2C models",
+        "attribution": "scale viral e-commerce"
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Incentivize dynamic e-markets",
+          "text": "Monetize B2B eyeballs",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Magna duis ex officia ullamco aute.",
+          "text": "Nisi aliqua officia elit Lorem aute fugiat fugiat velit dolore. Aliquip anim aute reprehenderit ad laborum commodo non occaecat sunt.",
           "spans": []
         }
       ],
-      "cta": "engage revolutionary e-business",
-      "quotesTitle": "exploit ubiquitous action-items",
+      "cta": "scale turn-key schemas",
+      "quotesTitle": "revolutionize extensible markets",
       "image": {
         "dimensions": {
           "width": 900,
@@ -45,7 +41,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
       }
     }
   }

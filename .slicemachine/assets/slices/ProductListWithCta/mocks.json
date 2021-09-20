@@ -13,7 +13,25 @@
       {
         "productLink": {
           "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
           "url": "http://google.com"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
         }
       }
     ],
@@ -21,14 +39,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Embrace compelling solutions",
+          "text": "Strategize customized architectures",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Culpa est veniam amet laborum.",
+          "text": "Qui amet nisi non cupidatat elit culpa velit ullamco adipisicing consectetur. Proident ut eiusmod minim aute. Labore aliqua sit veniam officia eiusmod ad est.",
           "spans": []
         }
       ]

@@ -34,7 +34,10 @@ export const customLink = (type, element, content, children, index) => (
 
 export const Router = {
   routes: [
-    {"type":"page","path":"/:uid"},
+    {
+      "type":"page",
+      "path":"/:uid"
+    },
     {
       "type":"home-page",
       "path":"/"

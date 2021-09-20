@@ -1,33 +1,33 @@
 import React from "react";
 
-const footerNavigation = {
-    shop: [
-      { name: 'Bags', href: '#' },
-      { name: 'Tees', href: '#' },
-      { name: 'Objects', href: '#' },
-      { name: 'Home Goods', href: '#' },
-      { name: 'Accessories', href: '#' },
-    ],
-    company: [
-      { name: 'Who we are', href: '#' },
-      { name: 'Sustainability', href: '#' },
-      { name: 'Press', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'Terms & Conditions', href: '#' },
-      { name: 'Privacy', href: '#' },
-    ],
-    account: [
-      { name: 'Manage Account', href: '#' },
-      { name: 'Returns & Exchanges', href: '#' },
-      { name: 'Redeem a Gift Card', href: '#' },
-    ],
-    connect: [
-      { name: 'Contact Us', href: '#' },
-      { name: 'Twitter', href: '#' },
-      { name: 'Instagram', href: '#' },
-      { name: 'Pinterest', href: '#' },
-    ],
-  }
+// const footerNavigation = {
+//     shop: [
+//       { name: 'Bags', href: '#' },
+//       { name: 'Tees', href: '#' },
+//       { name: 'Objects', href: '#' },
+//       { name: 'Home Goods', href: '#' },
+//       { name: 'Accessories', href: '#' },
+//     ],
+//     company: [
+//       { name: 'Who we are', href: '#' },
+//       { name: 'Sustainability', href: '#' },
+//       { name: 'Press', href: '#' },
+//       { name: 'Careers', href: '#' },
+//       { name: 'Terms & Conditions', href: '#' },
+//       { name: 'Privacy', href: '#' },
+//     ],
+//     account: [
+//       { name: 'Manage Account', href: '#' },
+//       { name: 'Returns & Exchanges', href: '#' },
+//       { name: 'Redeem a Gift Card', href: '#' },
+//     ],
+//     connect: [
+//       { name: 'Contact Us', href: '#' },
+//       { name: 'Twitter', href: '#' },
+//       { name: 'Instagram', href: '#' },
+//       { name: 'Pinterest', href: '#' },
+//     ],
+//   }
 
 
 export default function Header({ footer = [], }){
@@ -41,7 +41,7 @@ export default function Header({ footer = [], }){
           <div className="py-20 xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid md:grid-cols-4 gap-8 xl:col-span-2">
                 {footer.data.body.map((column,index) => (
-                <div className="space-y-16 md:space-y-0 md:gap-8">
+                <div className="space-y-16 md:space-y-0 md:gap-8" key={index}>
                     <div>
                         <h3 className="text-sm font-medium text-gray-900">{column.primary.section_title}</h3>
                         <ul role="list" className="mt-6 space-y-6">
@@ -54,7 +54,7 @@ export default function Header({ footer = [], }){
                             ))}
                         </ul>
                     </div>
-              </div>
+                </div>
                 ))}
             </div>
             <div className="mt-16 md:mt-16 xl:mt-0">

@@ -24,6 +24,9 @@
             },
             "product_overview_with_image_grid": {
               "type": "SharedSlice"
+            },
+            "promo_section_full_width_with_overlapping_image_tiles": {
+              "type": "SharedSlice"
             }
           }
         }

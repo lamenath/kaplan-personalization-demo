@@ -2,36 +2,10 @@
   "slices": {
     "HeroBanner": {},
     "PromoSectionImageTiles": {},
-    "ProductListWithCta": {
-      "default-slice": {
-        "items": {}
-      }
-    },
+    "ProductListWithCta": {},
     "PromoSectionFadingBackgroundTestimonials": {},
-    "ProductOverviewWithImageGrid": {
-      "default-slice": {
-        "primary": {
-          "description": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "highlights": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          },
-          "details": {
-            "config": {
-              "patternType": "PARAGRAPH",
-              "blocks": 1
-            }
-          }
-        }
-      }
-    }
+    "ProductOverviewWithImageGrid": {},
+    "PromoSectionFullWidthWithOverlappingImageTiles": {}
   },
   "_cts": {
     "home-page": {},
