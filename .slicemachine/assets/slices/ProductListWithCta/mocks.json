@@ -7,13 +7,7 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "productLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -33,20 +27,26 @@
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Strategize customized architectures",
+          "text": "Repurpose collaborative architectures",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Qui amet nisi non cupidatat elit culpa velit ullamco adipisicing consectetur. Proident ut eiusmod minim aute. Labore aliqua sit veniam officia eiusmod ad est.",
+          "text": "Et officia adipisicing do occaecat laborum est irure laborum id eiusmod proident.",
           "spans": []
         }
       ]

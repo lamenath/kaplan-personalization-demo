@@ -27,6 +27,9 @@
             },
             "promo_section_full_width_with_overlapping_image_tiles": {
               "type": "SharedSlice"
+            },
+            "my_slice": {
+              "type": "SharedSlice"
             }
           }
         }
