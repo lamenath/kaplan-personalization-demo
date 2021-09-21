@@ -7,7 +7,13 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://google.com"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
         }
       },
       {
@@ -19,19 +25,13 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "productLink": {
-          "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
       },
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         }
       }
     ],
@@ -39,14 +39,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Repurpose collaborative architectures",
+          "text": "Synthesize global metrics",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Et officia adipisicing do occaecat laborum est irure laborum id eiusmod proident.",
+          "text": "Amet qui ipsum nostrud laborum minim. Et sunt commodo ullamco ut Lorem ullamco minim reprehenderit enim sit tempor magna consequat.",
           "spans": []
         }
       ]
