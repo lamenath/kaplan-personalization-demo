@@ -6,3 +6,4 @@ export { default as ProductOverviewWithImageGrid } from './ProductOverviewWithIm
 export { default as PromoSectionFadingBackgroundTestimonials } from './PromoSectionFadingBackgroundTestimonials'
 export { default as PromoSectionFullWidthWithOverlappingImageTiles } from './PromoSectionFullWidthWithOverlappingImageTiles'
 export { default as PromoSectionImageTiles } from './PromoSectionImageTiles'
+export { default as PromoSectionWithBackgroundImage } from './PromoSectionWithBackgroundImage'

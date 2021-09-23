@@ -7,19 +7,7 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "productLink": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "productLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -31,7 +19,7 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "http://google.com"
         }
       }
     ],
@@ -39,14 +27,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Synthesize global metrics",
+          "text": "Deliver compelling ROI",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Amet qui ipsum nostrud laborum minim. Et sunt commodo ullamco ut Lorem ullamco minim reprehenderit enim sit tempor magna consequat.",
+          "text": "Dolore ut mollit proident aute sunt cillum nostrud irure irure deserunt quis irure occaecat aute mollit.",
           "spans": []
         }
       ]

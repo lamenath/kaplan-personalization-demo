@@ -5,35 +5,43 @@
     "slice_type": "promo_section_fading_background_testimonials",
     "items": [
       {
-        "quote": "e-enable virtual infrastructures",
-        "attribution": "brand bleeding-edge bandwidth"
+        "quote": "enable granular e-tailers",
+        "attribution": "revolutionize back-end markets"
       },
       {
-        "quote": "visualize cross-platform technologies",
-        "attribution": "incubate visionary e-markets"
+        "quote": "repurpose innovative schemas",
+        "attribution": "whiteboard B2C supply-chains"
       },
       {
-        "quote": "iterate front-end e-business",
-        "attribution": "architect integrated systems"
+        "quote": "aggregate 24/7 communities",
+        "attribution": "streamline extensible e-markets"
+      },
+      {
+        "quote": "transition seamless metrics",
+        "attribution": "morph collaborative functionalities"
+      },
+      {
+        "quote": "deploy interactive web-readiness",
+        "attribution": "maximize open-source web-readiness"
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Reinvent customized technologies",
+          "text": "Implement vertical action-items",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Elit duis tempor nulla nulla velit qui mollit mollit.",
+          "text": "Ipsum quis velit ea mollit eiusmod eiusmod ex magna. Irure ad dolor aute nulla tempor nulla dolore aute nulla enim. Eiusmod non consequat et reprehenderit eu minim esse consequat dolore labore officia magna exercitation ipsum magna.",
           "spans": []
         }
       ],
-      "cta": "whiteboard 24/365 infomediaries",
-      "quotesTitle": "morph proactive initiatives",
+      "cta": "expedite bricks-and-clicks solutions",
+      "quotesTitle": "brand leading-edge models",
       "image": {
         "dimensions": {
           "width": 900,
@@ -41,7 +49,7 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
       }
     }
   }

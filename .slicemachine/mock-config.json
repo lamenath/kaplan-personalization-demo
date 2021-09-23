@@ -5,7 +5,8 @@
     "ProductListWithCta": {},
     "PromoSectionFadingBackgroundTestimonials": {},
     "ProductOverviewWithImageGrid": {},
-    "PromoSectionFullWidthWithOverlappingImageTiles": {}
+    "PromoSectionFullWidthWithOverlappingImageTiles": {},
+    "PromoSectionWithBackgroundImage": {}
   },
   "_cts": {
     "home-page": {},
