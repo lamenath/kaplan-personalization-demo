@@ -8,9 +8,12 @@ export default class MyApp extends NextApp {
     const client = Client();
     const menu = (await client.getSingle("menu")) || {};
     const footer = (await client.getSingle("footer")) || {};
-    const categoriesId = menu.data.menu_tabs.map(function(tab) {
-      return tab.tab.id
-    })
+    let categoriesId = [];
+    if(menu.data){
+      categoriesId = menu.data.menu_tabs.map(function(tab) {
+        return tab.tab.id
+      }) 
+    }
     const categories = (await client.getByIDs(categoriesId)) || {};
     const categoriesClean = categories.results.map(function(category) {
       return {

@@ -58,8 +58,8 @@ export default function Header({ footer = [], }){
                 ))}
             </div>
             <div className="mt-16 md:mt-16 xl:mt-0">
-              <h3 className="text-sm font-medium text-gray-900">{footer.data.newsletter_title}</h3>
-              <p className="mt-6 text-sm text-gray-500">{footer.data.newsletter_description}</p>
+              <h3 className="text-sm font-medium text-gray-900">{footer.data.newsletter_title ? footer.data.newsletter_title : <span>newsletter_title</span>}</h3>
+              <p className="mt-6 text-sm text-gray-500">{footer.data.newsletter_description ? footer.data.newsletter_description : <span>newsletter_description</span>}</p>
               <form className="mt-2 flex sm:max-w-md">
                 <label htmlFor="email-address" className="sr-only">
                   Email address

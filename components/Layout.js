@@ -10,9 +10,15 @@ const Layout = ({ children, menu, footer, categories }) => {
       <Head>
         <title> Prismic E-commerce Demo </title>
       </Head>
-      <Header menu={menu} categories={categories}/>
+      { menu.data ?
+        <Header menu={menu} categories={categories}/>
+        : <span/>
+      }
       <main>{children}</main>
-      <Footer footer={footer}/>
+      { footer.data ?
+        <Footer footer={footer}/>
+        : <span/>
+      }
       <ExitPreviewButton />
     </div>
   )

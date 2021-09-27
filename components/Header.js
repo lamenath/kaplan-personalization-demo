@@ -8,7 +8,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Header({ menu = [], categories =[] }){
+export default function Header({ menu = [], categories = [] }){
   const [open, setOpen] = useState(false)
   return (
     <div className="bg-white">
