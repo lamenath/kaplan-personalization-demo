@@ -1,0 +1,56 @@
+{
+  "id": "sub_category",
+  "type": "SharedSlice",
+  "name": "SubCategory",
+  "description": "SubCategory",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SubCategory",
+      "primary": {
+        "section_id": {
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "section_name": {
+          "config": {
+            "label": "Section Name",
+            "placeholder": ""
+          },
+          "type": "Text"
+        }
+      },
+      "items": {
+        "sub_section_id": {
+          "config": {
+            "label": "Sub Section Id",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "sub_section_name": {
+          "config": {
+            "label": "Sub Section Name",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "sub_section_href": {
+          "config": {
+            "label": "Sub Section Link",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        }
+      }
+    }
+  ]
+}

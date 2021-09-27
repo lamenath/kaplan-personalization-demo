@@ -17,9 +17,9 @@ export default class MyApp extends NextApp {
         id: category.data.id,
         name: category.data.name,
         featured: category.data.featured,
-        sections: category.data.body,
+        sections: category.data.slices,
       }
-    })
+    }) || [];
     
     return {
       props: {

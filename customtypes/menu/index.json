@@ -4,43 +4,57 @@
   "repeatable": false,
   "status": true,
   "json": {
-    "Main": {
-      "title": {
-        "type": "StructuredText",
-        "config": {
-          "placeholder": "Menu title...",
-          "single": "heading1"
+    "Main" : {
+      "topPromoBanner" : {
+        "config" : {
+          "label" : "topPromoBanner",
+          "placeholder" : ""
+        },
+        "type" : "Text"
+      },
+      "logo" : {
+        "type" : "Image",
+        "config" : {
+          "constraint" : { },
+          "thumbnails" : [ ],
+          "label" : "Logo"
         }
       },
-      "menu_links": {
-        "type": "Group",
-        "config": {
-          "fields": {
-            "label": {
-              "type": "StructuredText",
-              "config": {
-                "single": "paragraph",
-                "label": "Link Label",
-                "placeholder": "Link Label..."
-              }
-            },
-            "link": {
-              "type": "Link",
-              "config": {
-                "label": "Link",
-                "placeholder": "Select a Link..."
+      "menu_tabs" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "tab" : {
+              "type" : "Link",
+              "config" : {
+                "select" : "document",
+                "customtypes" : [ "category" ],
+                "label" : "Tab"
               }
             }
           },
-          "label": "Menu Links"
+          "label" : "Menu tabs"
         }
       },
-      "topPromoBanner": {
-        "config": {
-          "label": "topPromoBanner",
-          "placeholder": ""
-        },
-        "type": "Text"
+      "pages" : {
+        "type" : "Group",
+        "config" : {
+          "fields" : {
+            "name" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "page_title"
+              }
+            },
+            "href" : {
+              "type" : "Text",
+              "config" : {
+                "label" : "href"
+              }
+            }
+          },
+          "label" : "menu_pages"
+        }
       }
     }
   }

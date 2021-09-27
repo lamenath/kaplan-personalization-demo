@@ -10,7 +10,6 @@ function classNames(...classes) {
 
 export default function Header({ menu = [], categories =[] }){
   const [open, setOpen] = useState(false)
-
   return (
     <div className="bg-white">
       {/* Mobile menu */}

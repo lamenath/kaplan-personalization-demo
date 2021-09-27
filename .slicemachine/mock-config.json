@@ -6,11 +6,17 @@
     "PromoSectionFadingBackgroundTestimonials": {},
     "ProductOverviewWithImageGrid": {},
     "PromoSectionFullWidthWithOverlappingImageTiles": {},
-    "PromoSectionWithBackgroundImage": {}
+    "PromoSectionWithBackgroundImage": {},
+    "FooterColumn": {},
+    "SubCategory": {}
   },
   "_cts": {
     "home-page": {},
     "menu": {},
-    "page": {}
+    "page": {},
+    "footer": {},
+    "category": {
+      "featured": {}
+    }
   }
 }
