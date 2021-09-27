@@ -1,3 +1,14 @@
+Running this project on your laptop
+
+1. Download and extract the zip/tar file in the folder you want the project in
+2. type in terminal (in your folder) : npm install
+3. type in terminal (in your folder) : npm update
+4. add you repo name to the prismic in sm.json in your folder
+5. Launch slice machine (in your folder) : prismic sm --develop
+6. Push all custom types to prismic in the slice machine localhost:9999
+7. Add your content through the prismic UI
+8. Launch your website with (in your folder) : npm run dev
+
 # Prismic Slice Machine & Next.js Boilerplate
 > [Next.js](https://nextjs.org/) & Slice Machine boilerplate project with content managed in [Prismic](https://prismic.io) and components built with Slice Machine
 
