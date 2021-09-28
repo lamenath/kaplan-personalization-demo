@@ -8,21 +8,25 @@ export default class MyApp extends NextApp {
     const client = Client();
     const menu = (await client.getSingle("menu")) || {};
     const footer = (await client.getSingle("footer")) || {};
-    let categoriesId = [];
+    let categoriesClean = [];
     if(menu.data){
-      categoriesId = menu.data.menu_tabs.map(function(tab) {
+      const categoriesId = menu.data.menu_tabs.map(function(tab) {
         return tab.tab.id
-      }) 
-    }
-    const categories = (await client.getByIDs(categoriesId)) || {};
-    const categoriesClean = categories.results.map(function(category) {
-      return {
-        id: category.data.id,
-        name: category.data.name,
-        featured: category.data.featured,
-        sections: category.data.slices,
+      })
+      if (typeof categoriesId[0] !== 'undefined'){
+        const categories = (await client.getByIDs(categoriesId)) || {};
+        if(categories.results){
+          categoriesClean = categories.results.map(function(category) {
+            return {
+              id: category.data.id,
+              name: category.data.name,
+              featured: category.data.featured,
+              sections: category.data.slices,
+            }
+          });
+        }
       }
-    }) || [];
+    }
     
     return {
       props: {
