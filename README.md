@@ -9,6 +9,13 @@ Running this project on your laptop
 7. Add your content through the prismic UI
 8. Launch your website with (in your folder) : npm run dev
 
+To enable Integration Fields
+
+Change this line of code in this file your project : Slices/ProductListWithCta/model.json
+"catalog": "demo-sm-next-ecom--products",
+Replace "demo-sm-next-ecom" by your repo and "products" by your integration fields name
+
+
 # Prismic Slice Machine & Next.js Boilerplate
 > [Next.js](https://nextjs.org/) & Slice Machine boilerplate project with content managed in [Prismic](https://prismic.io) and components built with Slice Machine
 
