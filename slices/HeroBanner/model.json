@@ -33,9 +33,9 @@
           },
           "type": "Image"
         },
-        "CTA": {
+        "cta": {
           "config": {
-            "label": "",
+            "label": "CTA",
             "placeholder": ""
           },
           "type": "Text"

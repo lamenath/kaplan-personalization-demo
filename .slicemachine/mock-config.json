@@ -1,6 +1,10 @@
 {
   "slices": {
-    "HeroBanner": {},
+    "HeroBanner": {
+      "default-slice": {
+        "primary": {}
+      }
+    },
     "PromoSectionImageTiles": {},
     "ProductListWithCta": {},
     "PromoSectionFadingBackgroundTestimonials": {},
