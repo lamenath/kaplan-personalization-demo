@@ -73,7 +73,7 @@ const asyncHandler = (cb) => (
 )
 
 const getPageDocs = asyncHandler(async (uid, ref = null) => {
-  const page = await getDocumentByUID('page', uid, { ref, fetch: 'page.uid' }) || null
+  const page = await getDocumentByUID('page', uid, { ref , fetch: 'page.slices' }) || null //, fetch: 'page.uid' 
 
   return { page }
 })
