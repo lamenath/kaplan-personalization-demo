@@ -11,7 +11,6 @@ import { useEffect } from 'react'
 const Page = (props) => {
   useUpdatePreviewRef(props.previewData, props.id)
   useUpdateToolbarDocs(pageToolbarDocs(props.uid, props.previewData.ref), [props])
-  console.log(props)
   return (
     <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
       <SliceZone {...props} resolver={resolver} />
