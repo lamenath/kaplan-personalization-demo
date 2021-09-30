@@ -7,19 +7,13 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "http://twitter.com"
         }
       },
       {
         "productLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "productLink": {
-          "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         }
       }
     ],
@@ -27,14 +21,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Deliver compelling ROI",
+          "text": "Evolve out-of-the-box technologies",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Dolore ut mollit proident aute sunt cillum nostrud irure irure deserunt quis irure occaecat aute mollit.",
+          "text": "Esse officia amet mollit aliqua.",
           "spans": []
         }
       ]

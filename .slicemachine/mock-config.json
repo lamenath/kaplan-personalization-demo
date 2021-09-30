@@ -1,16 +1,5 @@
 {
   "slices": {
-    "HeroBanner": {
-      "default-slice": {
-        "primary": {}
-      }
-    },
-    "PromoSectionImageTiles": {},
-    "ProductListWithCta": {},
-    "PromoSectionFadingBackgroundTestimonials": {},
-    "ProductOverviewWithImageGrid": {},
-    "PromoSectionFullWidthWithOverlappingImageTiles": {},
-    "PromoSectionWithBackgroundImage": {},
     "FooterColumn": {},
     "SubCategory": {}
   },

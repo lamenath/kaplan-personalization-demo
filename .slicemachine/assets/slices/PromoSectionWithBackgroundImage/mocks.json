@@ -8,14 +8,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Enable distributed web services",
+          "text": "Generate collaborative web services",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Amet ut duis laboris quis ut velit nostrud ex proident voluptate adipisicing dolore ad et aute. Excepteur ex Lorem quis excepteur proident id quis veniam in sit ea cillum dolore. Nostrud occaecat aliquip ullamco ullamco ex magna pariatur veniam quis.",
+          "text": "Ea enim fugiat do tempor duis sunt Lorem consequat esse dolor. Cupidatat elit minim in ut reprehenderit.",
           "spans": []
         }
       ],
@@ -26,13 +26,13 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587905069134-008460d7a636?w=900&h=500&fit=crop"
       },
       "link": {
         "link_type": "Web",
-        "url": "https://slicemachine.dev"
+        "url": "http://twitter.com"
       },
-      "linkLabel": "target out-of-the-box architectures"
+      "linkLabel": "grow cross-media web services"
     }
   }
 ]
