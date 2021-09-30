@@ -13,6 +13,18 @@ export default async (req, res) => {
         );
         const data = await response.json()
 
+        const responseResetPrismic = await fetch(
+            "https://if-api.prismic.io/if/write/demo-sm-next-ecom--intents/reset",
+            {
+            method: "post",
+            headers: {
+                "Authorization":
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmlzbWljLmlvIiwiaWF0IjoxNjMyOTM4NzU3Mzk2LCJjYXRhbG9nSWQiOiJkZW1vLXNtLW5leHQtZWNvbS0taW50ZW50cyJ9.RYsHoE5kXV5yFb_vP_5MBtC5uyzegV8l_o2k5ZJBV-w",
+                "Content-Type": "application/json"
+            }
+            }
+        );
+
         const responsePrismic = await fetch(
             "https://if-api.prismic.io/if/write/demo-sm-next-ecom--intents",
             {
