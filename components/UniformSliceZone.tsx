@@ -62,7 +62,7 @@ export default function UniformSliceZone({
     key: uniqueId(),
     uniformVariations: groupedSlices[slice.primary.personalisationid],
     intentTag: undefined,
-  })) as IEnhancedUnknownSlice[];
+  })) as unknown as IEnhancedUnknownSlice[];
 
   function ComponentMapper(props) {
     const slice = props;
