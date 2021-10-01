@@ -15,6 +15,7 @@ const ProductListWithCta = ({ slice }) => (
 
         <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-4 md:gap-y-0 lg:gap-x-8">
           {slice.items.map((product) => (
+          product.topProduct ?
             <div key={product.topProduct.id} className="group relative">
               <div className="w-full h-56 bg-gray-200 rounded-md overflow-hidden group-hover:opacity-75 lg:h-72 xl:h-80">
                 <img
@@ -32,6 +33,7 @@ const ProductListWithCta = ({ slice }) => (
               <p className="mt-1 text-sm text-gray-500">{product.topProduct.color}</p>
               <p className="mt-1 text-sm font-medium text-gray-900">{product.topProduct.price}</p>
             </div>
+          : <p> No Integration Field set up </p>
           ))}
         </div>
 

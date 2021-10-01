@@ -72,6 +72,7 @@ export default function ProductOverviewWithImageGrid({ slice }) {
 
   return (
     <div className="bg-white">
+      {slice.primary.product ?
       <div className="pt-6">
         <nav aria-label="Breadcrumb">
           <ol role="list" className="max-w-2xl mx-auto px-4 flex items-center space-x-2 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -332,6 +333,7 @@ export default function ProductOverviewWithImageGrid({ slice }) {
           </div>
         </div>
       </div>
+      : <p> No Integration Field set up </p>}
     </div>
   )
 }

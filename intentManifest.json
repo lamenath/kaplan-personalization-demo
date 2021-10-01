@@ -1,0 +1,41 @@
+{
+    "site": {
+        "sampleSize": 0,
+        "intents": [
+            {
+                "id": "vintageCameraAmateurs",
+                "signals": [
+                    {
+                        "type": "PVI",
+                        "freq": "always",
+                        "scope": "visit",
+                        "str": 25,
+                        "path": {
+                            "cs": false,
+                            "expr": "/uniform/vintage-cameras",
+                            "type": "exact"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "compactCameraAmateurs",
+                "signals": [
+                    {
+                        "type": "PVI",
+                        "freq": "always",
+                        "scope": "visit",
+                        "str": 25,
+                        "path": {
+                            "cs": false,
+                            "expr": "/uniform/compact-cameras",
+                            "type": "exact"
+                        }
+                    }
+                ]
+            }
+        ],
+        "enrichments": [],
+        "tests": []
+    }
+}

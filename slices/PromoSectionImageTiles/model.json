@@ -14,7 +14,7 @@
         "title": {
           "config": {
             "label": "Title",
-            "placeholder": "Enter main title here..."
+            "placeholder": "Enter main title here.."
           },
           "type": "Text"
         },
@@ -85,7 +85,7 @@
           "config": {
             "label": "CTA Link",
             "placeholder": "",
-            "select": "web",
+            "select": "document",
             "allowTargetBlank": false
           },
           "type": "Link"
@@ -93,6 +93,20 @@
         "linkLabel": {
           "config": {
             "label": "CTA Label",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "intent": {
+          "type": "IntegrationFields",
+          "config": {
+            "catalog": "demo-sm-next-ecom--intents",
+            "label": "Uniform Intent"
+          }
+        },
+        "personalisationid": {
+          "config": {
+            "label": "personalisationid",
             "placeholder": ""
           },
           "type": "Text"

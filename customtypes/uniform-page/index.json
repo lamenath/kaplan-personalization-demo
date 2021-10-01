@@ -1,0 +1,47 @@
+{
+  "id": "uniform-page",
+  "label": "Uniform Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "promo_section_image_tiles": {
+              "type": "SharedSlice"
+            },
+            "promo_section_with_background_image": {
+              "type": "SharedSlice"
+            },
+            "promo_section_fading_background_testimonials": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "PromoSectionImageTiles": {
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "promo_section_image_tiles": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
