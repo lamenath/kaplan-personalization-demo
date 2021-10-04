@@ -5,8 +5,13 @@ import SliceZone from "next-slicezone";
 
 import resolver from "../../sm-resolver.js";
 import UniformSliceZone from "../../components/UniformSliceZone";
+import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
+
+import { useEffect } from 'react'
 
 const Page = (props) => {
+  useUpdatePreviewRef(props.previewData.ref, props.id)
+  useUpdateToolbarDocs(uniformPageToolbarDocs(props.uid, props.previewData.ref), [props])
   return(
   <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
     <UniformSliceZone {...props} resolver={resolver} />
@@ -37,5 +42,44 @@ export const getStaticPaths = useGetStaticPaths({
     }
   }
 });
+
+const useUpdateToolbarDocs = (docQuery, deps) => {
+  useEffect(() => {
+    docQuery()
+  }, deps)
+}
+
+const uniformPageToolbarDocs = (uid, ref = null) => (async () => {
+  const pageDocsPromise = getUniformPageDocs(uid, ref)
+  //const layoutPromise = getLayout(ref, { fetch: 'layout.prismic_display_name' })
+  //const prismicDocs = await Promise.all([pageDocsPromise, layoutPromise])
+  const prismicDocs = await Promise.all([pageDocsPromise])
+  const [{page}] = prismicDocs
+
+  return {
+    page
+  }
+})
+
+const asyncHandler = (cb) => (
+  async (...args) => {
+    try {
+      return await cb(...args)
+    } catch (error) {
+      console.log(error)
+      return null
+    }
+  }
+)
+
+const getUniformPageDocs = asyncHandler(async (uid, ref = null) => {
+  const page = await getDocumentByUID('uniform-page', uid, { ref , fetch: 'page.slices' }) || null //, fetch: 'page.uid' 
+
+  return { page }
+})
+
+const getDocumentByUID = asyncHandler(async (type, uid, options = {}) => (
+  Client().getByUID(type, uid, options)
+))
 
 export default Page;

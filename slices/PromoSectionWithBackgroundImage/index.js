@@ -19,9 +19,9 @@ const PromoSectionWithBackgroundImage = ({ slice }) => (
               <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
                 <span className="block sm:inline"><RichText render={slice.primary.title} /></span>
               </h2>
-              <p className="mt-3 text-xl text-white">
+              <div className="mt-3 text-xl text-white">
                 <RichText render={slice.primary.description} />
-              </p>
+              </div>
               <a
                 href={Link.url(slice.primary.link,linkResolver)}
                 className="mt-8 w-full block bg-white border border-transparent rounded-md py-3 px-8 text-base font-medium text-gray-900 hover:bg-gray-100 sm:w-auto"

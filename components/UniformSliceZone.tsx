@@ -70,7 +70,7 @@ export default function UniformSliceZone({
     });
     const key = props.key;
   
-    return <SliceComponent slice={slice} />;
+    return <SliceComponent key={key} slice={slice} />;
   }
 
   return (
