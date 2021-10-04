@@ -43,7 +43,7 @@
               "config": {
                 "label": "Link",
                 "placeholder": "",
-                "select": "web",
+                "select": "document",
                 "allowTargetBlank": false
               },
               "type": "Link"

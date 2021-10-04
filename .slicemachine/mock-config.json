@@ -1,7 +1,6 @@
 {
   "slices": {
-    "FooterColumn": {},
-    "SubCategory": {}
+    "FooterColumn": {}
   },
   "_cts": {
     "home-page": {},

@@ -3,6 +3,7 @@ import React from "react";
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, ShoppingBagIcon, XIcon } from '@heroicons/react/outline'
+import {Link} from 'prismic-reactjs'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -114,7 +115,7 @@ export default function Header({ menu = [], categories = [] }){
               <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                 {menu.data.pages.map((page) => (
                   <div key={page.name} className="flow-root">
-                    <a href={page.href} className="-m-2 p-2 block font-medium text-gray-900">
+                    <a href={Link.url(page.href)} className="-m-2 p-2 block font-medium text-gray-900">
                       {page.name}
                     </a>
                   </div>
@@ -270,7 +271,7 @@ export default function Header({ menu = [], categories = [] }){
                   {menu.data.pages.map((page) => (
                     <a
                       key={page.name}
-                      href={page.href}
+                      href={Link.url(page.href)}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}

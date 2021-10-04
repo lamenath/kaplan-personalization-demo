@@ -47,9 +47,10 @@
               }
             },
             "href" : {
-              "type" : "Text",
+              "type" : "Link",
               "config" : {
-                "label" : "href"
+                "select" : "document",
+                "label" : "Link"
               }
             }
           },
