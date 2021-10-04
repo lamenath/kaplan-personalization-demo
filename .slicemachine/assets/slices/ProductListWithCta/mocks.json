@@ -7,13 +7,25 @@
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "http://google.com"
         }
       },
       {
         "productLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "productLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
         }
       }
     ],
@@ -21,14 +33,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Evolve out-of-the-box technologies",
+          "text": "Reinvent robust functionalities",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Esse officia amet mollit aliqua.",
+          "text": "Amet sunt sit mollit quis ullamco nostrud ipsum aliqua eiusmod commodo eiusmod.",
           "spans": []
         }
       ]

@@ -1,0 +1,35 @@
+{
+  "id": "product-page",
+  "label": "Product Page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "product_overview_with_image_grid": {
+              "type": "SharedSlice"
+            },
+            "promo_section_with_background_image": {
+              "type": "SharedSlice"
+            },
+            "product_list_with_cta": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO Metadata": {}
+  }
+}

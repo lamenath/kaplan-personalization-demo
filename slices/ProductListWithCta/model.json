@@ -43,7 +43,7 @@
             "label": "Product Link",
             "select": "document",
             "customtypes": [
-              "page"
+              "product-page"
             ]
           },
           "type": "Link"

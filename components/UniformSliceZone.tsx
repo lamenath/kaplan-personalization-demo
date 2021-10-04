@@ -7,8 +7,6 @@ import resolver from "../sm-resolver.js";
 import camelCase from "lodash/camelCase";
 import upperFirst from "lodash/upperFirst";
 
-import SliceZone from "next-slicezone";
-
 export type TUnknownSlice = {
   primary: {
     intent?: { id: string; [_key: string]: unknown };

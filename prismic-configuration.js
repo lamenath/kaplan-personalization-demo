@@ -22,6 +22,12 @@ export const linkResolver = (doc) => {
   if (doc.type === "page") {
     return `/${doc.uid}`;
   }
+  if (doc.type === "product-page") {
+    return `/product/${doc.uid}`;
+  }
+  if (doc.type === "blog-page") {
+    return `/blog/${doc.uid}`;
+  }
   return "/";
 };
 
@@ -40,6 +46,14 @@ export const Router = {
     {
       "type":"page",
       "path":"/:uid"
+    },
+    {
+      "type":"product-page",
+      "path":"/product/:uid"
+    },
+    {
+      "type":"blog-page",
+      "path":"/blog/:uid"
     },
     {
       "type":"home-page",

@@ -11,6 +11,21 @@
     "category": {
       "featured": {}
     },
-    "uniform-page": {}
+    "uniform-page": {},
+    "product-page": {},
+    "blog-page": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "preTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

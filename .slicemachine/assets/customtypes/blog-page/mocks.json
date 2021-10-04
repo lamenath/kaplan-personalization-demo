@@ -1,0 +1,28 @@
+{
+  "id": "c80c4437-7bc0-4f1e-9047-ae430ba64e52",
+  "uid": "quos-iure-itaque",
+  "type": "blog-page",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Deploy mission-critical e-commerce",
+        "spans": []
+      }
+    ],
+    "preTitle": [
+      {
+        "type": "heading1",
+        "text": "Grow best-of-breed users",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip id aliquip id.",
+        "spans": []
+      }
+    ]
+  }
+}
