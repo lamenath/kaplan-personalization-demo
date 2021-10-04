@@ -19,7 +19,6 @@ const Layout = ({ children, menu, footer, categories }) => {
         <Footer footer={footer}/>
         : <span/>
       }
-      <ExitPreviewButton />
     </div>
   )
 };

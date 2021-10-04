@@ -9,7 +9,7 @@ import { useEffect } from 'react'
 import resolver from "../../sm-resolver.js";
 
 const BlogPage = (props) => {
-useUpdatePreviewRef(props.previewData, props.id)
+useUpdatePreviewRef(props.previewData.ref, props.id)
 useUpdateToolbarDocs(blogPageToolbarDocs(props.uid, props.previewData.ref), [props])
 return (
   <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
