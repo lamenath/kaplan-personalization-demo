@@ -56,8 +56,7 @@ const asyncHandler = (cb) => (
 
 const getHomepageDocs = asyncHandler(async (ref = null) => {
   const page = await getDocumentByUID('home-page', { ref }) || null // , fetch: 'homepage.slices' 
-  console.log(page)
-
+  
   return { page }
 })
 
