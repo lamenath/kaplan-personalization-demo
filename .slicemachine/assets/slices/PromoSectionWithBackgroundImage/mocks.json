@@ -8,14 +8,14 @@
       "title": [
         {
           "type": "heading1",
-          "text": "Envisioneer efficient methodologies",
+          "text": "Architect back-end infrastructures",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Consequat veniam laboris anim nostrud ullamco.",
+          "text": "Sint excepteur sint consequat amet anim eu culpa. Commodo proident dolore incididunt.",
           "spans": []
         }
       ],
@@ -26,13 +26,13 @@
         },
         "alt": "Placeholder image",
         "copyright": null,
-        "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
       },
       "link": {
         "link_type": "Web",
-        "url": "https://prismic.io"
+        "url": "http://twitter.com"
       },
-      "linkLabel": "empower bleeding-edge bandwidth"
+      "linkLabel": "streamline plug-and-play experiences"
     }
   }
 ]

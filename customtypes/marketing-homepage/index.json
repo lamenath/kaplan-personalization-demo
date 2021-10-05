@@ -12,6 +12,24 @@
           "choices": {
             "blog_section_three_column_cards": {
               "type": "SharedSlice"
+            },
+            "promo_section_with_background_image": {
+              "type": "SharedSlice"
+            },
+            "promo_section_image_tiles": {
+              "type": "SharedSlice"
+            },
+            "stats_section_split_with_image": {
+              "type": "SharedSlice"
+            },
+            "content_section_two_columns_with_image": {
+              "type": "SharedSlice"
+            },
+            "featured_section_centered22": {
+              "type": "SharedSlice"
+            },
+            "hero_section_split": {
+              "type": "SharedSlice"
             }
           }
         }

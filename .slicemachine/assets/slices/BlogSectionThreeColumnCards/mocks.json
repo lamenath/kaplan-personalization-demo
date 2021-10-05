@@ -7,7 +7,13 @@
       {
         "article": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "http://google.com"
+        }
+      },
+      {
+        "article": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
         }
       },
       {
@@ -15,20 +21,26 @@
           "link_type": "Web",
           "url": "http://google.com"
         }
+      },
+      {
+        "article": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
       }
     ],
     "primary": {
       "title": [
         {
           "type": "heading1",
-          "text": "Redefine vertical functionalities",
+          "text": "Unleash interactive blockchains",
           "spans": []
         }
       ],
       "description": [
         {
           "type": "paragraph",
-          "text": "Eiusmod nostrud magna et quis voluptate velit ea duis nisi occaecat incididunt aliquip incididunt. Commodo voluptate nisi officia esse veniam incididunt esse proident minim minim. Culpa eu duis ad aliquip exercitation occaecat.",
+          "text": "Eu laborum consequat veniam aute id veniam.",
           "spans": []
         }
       ]
