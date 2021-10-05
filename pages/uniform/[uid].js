@@ -8,6 +8,8 @@ import UniformSliceZone from "../../components/UniformSliceZone";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 
 import { useEffect } from 'react'
+import Head from "next/head";
+import DefaultErrorPage from 'next/error'
 
 const Page = (props) => {
   if(!props.previewData){
