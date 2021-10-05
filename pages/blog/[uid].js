@@ -5,19 +5,15 @@ import Layout from "../../components/Layout";
 import BlogLayout from "../../components/BlogLayout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 import { useEffect } from 'react'
-import Head from "next/head";
-import DefaultErrorPage from 'next/error'
+import Custom404 from "../404";
 
 import resolver from "../../sm-resolver.js";
 
 const BlogPage = (props) => {
-if(!props.previewData){
-  return <>
-      <Head>
-        <meta name="robots" content="noindex"/>
-      </Head>
-      <DefaultErrorPage statusCode={404} />
-    </>
+if(!props.data){
+  return (
+    Custom404()
+  );
 }
 useUpdatePreviewRef(props.previewData.ref, props.id)
 useUpdateToolbarDocs(blogPageToolbarDocs(props.uid, props.previewData.ref), [props])
