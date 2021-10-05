@@ -9,10 +9,14 @@ import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from 
 import { useEffect } from 'react'
 import Custom404 from "../404";
 
+import { useRouter } from "next/router";
+
 const ProductPage = (props) => {
-  if(!props.data){
+  const router = useRouter()
+  
+  if(router.isFallback){
     return (
-      Custom404()
+      <h1>Loading Preview...</h1>
     );
   }
   useUpdatePreviewRef(props.previewData.ref, props.id)
