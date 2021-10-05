@@ -11,7 +11,7 @@ import DefaultErrorPage from 'next/error'
 import resolver from "../../sm-resolver.js";
 
 const BlogPage = (props) => {
-if(!props.id){
+if(!props.previewData){
   return <>
       <Head>
         <meta name="robots" content="noindex"/>
