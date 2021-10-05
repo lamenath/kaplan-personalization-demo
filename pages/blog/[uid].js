@@ -9,11 +9,16 @@ import Custom404 from "../404";
 
 import resolver from "../../sm-resolver.js";
 
+import { useRouter } from 'next/router'
+import Loader from './../../components/Loader/Loader.js'
+
 const BlogPage = (props) => {
+  const router = useRouter()
+  if (router.isFallback) {
+    return <Loader />
+  }
 if(!props.id){
-  return (
-    Custom404()
-  );
+  return <Custom404 />
 }
 useUpdatePreviewRef(props.previewData.ref, props.id)
 useUpdateToolbarDocs(blogPageToolbarDocs(props.uid, props.previewData.ref), [props])
