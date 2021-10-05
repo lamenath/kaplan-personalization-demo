@@ -8,7 +8,7 @@ import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from 
 
 import { useEffect } from 'react'
 import Custom404 from "../404";
-import { Head } from "next/head";
+import Head from "next/head";
 import DefaultErrorPage from 'next/error'
 
 import { useRouter } from "next/router";
@@ -19,7 +19,7 @@ const ProductPage = (props) => {
   
   if(router.isFallback){
     return (
-      <h1>Loading Preview...</h1>
+      <h1>Loading fallback...</h1>
     );
   }
   if(!props.data){
