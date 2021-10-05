@@ -125,8 +125,6 @@ const BlogSectionThreeColumnCards = ({ slice }) => (
         </div>
       </div>
     </div>
-  )
-
   </section>
 )
 
