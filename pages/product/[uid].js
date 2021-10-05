@@ -33,6 +33,9 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'product-page',
+  getStaticPathsParams: {
+    fallback: true
+  },
   formatPath: (prismicDocument) => {
     return {
       params: {
