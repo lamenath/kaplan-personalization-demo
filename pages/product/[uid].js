@@ -19,6 +19,16 @@ const ProductPage = (props) => {
       <h1>Loading Preview...</h1>
     );
   }
+  if(!props.data){
+    return (
+      <>
+        <Head>
+          <meta name="robots" content="noindex"/>
+        </Head>
+        <DefaultErrorPage statusCode={404} />
+      </>
+    );
+  }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(productPageToolbarDocs(props.uid, props.previewData.ref), [props])
   return (
