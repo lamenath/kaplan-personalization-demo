@@ -7,30 +7,8 @@ import Layout from "../../components/Layout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 
 import { useEffect } from 'react'
-import Custom404 from "../404";
-import Head from "next/head";
-import DefaultErrorPage from 'next/error'
-
-import { useRouter } from "next/router";
-import next from "next";
 
 const ProductPage = (props) => {
-  // const router = useRouter()
-  // if(router.isFallback){
-  //   return (
-  //     <h1>Loading fallback...</h1>
-  //   );
-  // }
-  if(!props.data){
-    return (
-      <>
-        <Head>
-          <meta name="robots" content="noindex"/>
-        </Head>
-        <DefaultErrorPage statusCode={404} />
-      </>
-    );
-  }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(productPageToolbarDocs(props.uid, props.previewData.ref), [props])
   return (
@@ -55,9 +33,6 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'product-page',
-  // getStaticPathsParams: {
-  //   fallback: true
-  // },
   formatPath: (prismicDocument) => {
     return {
       params: {
