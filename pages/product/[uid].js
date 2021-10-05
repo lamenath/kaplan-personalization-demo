@@ -8,8 +8,11 @@ import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from 
 
 import { useEffect } from 'react'
 import Custom404 from "../404";
+import { Head } from "next/head";
+import DefaultErrorPage from 'next/error'
 
 import { useRouter } from "next/router";
+import next from "next";
 
 const ProductPage = (props) => {
   const router = useRouter()
