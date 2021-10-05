@@ -10,7 +10,7 @@ import Custom404 from "../404";
 import resolver from "../../sm-resolver.js";
 
 const BlogPage = (props) => {
-if(!props.data){
+if(!props.id){
   return (
     Custom404()
   );

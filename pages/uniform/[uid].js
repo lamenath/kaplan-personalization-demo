@@ -11,7 +11,7 @@ import { useEffect } from 'react'
 import Custom404 from "../404";
 
 const Page = (props) => {
-  if(!props.data){
+  if(!props.id){
     return (
       Custom404()
     );

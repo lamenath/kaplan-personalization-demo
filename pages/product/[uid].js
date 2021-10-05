@@ -6,9 +6,15 @@ import resolver from "../../sm-resolver.js";
 import Layout from "../../components/Layout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 
+import Custom404 from "../404";
 import { useEffect } from 'react'
 
 const ProductPage = (props) => {
+  if(!props.id){
+    return (
+      Custom404()
+    );
+  }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(productPageToolbarDocs(props.uid, props.previewData.ref), [props])
   return (
