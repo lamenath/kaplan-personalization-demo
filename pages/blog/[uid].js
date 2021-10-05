@@ -5,10 +5,20 @@ import Layout from "../../components/Layout";
 import BlogLayout from "../../components/BlogLayout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 import { useEffect } from 'react'
+import Head from "next/head";
+import DefaultErrorPage from 'next/error'
 
 import resolver from "../../sm-resolver.js";
 
 const BlogPage = (props) => {
+if(!props.id){
+  return <>
+      <Head>
+        <meta name="robots" content="noindex"/>
+      </Head>
+      <DefaultErrorPage statusCode={404} />
+    </>
+}
 useUpdatePreviewRef(props.previewData.ref, props.id)
 useUpdateToolbarDocs(blogPageToolbarDocs(props.uid, props.previewData.ref), [props])
 return (
@@ -35,6 +45,9 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'blog-page',
+  getStaticPathsParams: {
+    fallback: true
+  },
   formatPath: (prismicDocument) => {
     return {
       params: {
