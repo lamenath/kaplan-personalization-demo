@@ -10,6 +10,14 @@ import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from 
 import { useEffect } from 'react'
 
 const Page = (props) => {
+  if(!props.previewData){
+    return <>
+        <Head>
+          <meta name="robots" content="noindex"/>
+        </Head>
+        <DefaultErrorPage statusCode={404} />
+      </>
+  }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(uniformPageToolbarDocs(props.uid, props.previewData.ref), [props])
   return(
@@ -34,6 +42,9 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'uniform-page',
+  getStaticPathsParams: {
+    fallback: true
+  },
   formatPath: (prismicDocument) => {
     return {
       params: {

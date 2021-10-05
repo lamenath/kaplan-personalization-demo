@@ -9,6 +9,14 @@ import useUpdatePreviewRef from '../tools/useUpdatePreviewRef' //import from whe
 import { useEffect } from 'react'
 
 const Page = (props) => {
+  if(!props.previewData){
+    return <>
+        <Head>
+          <meta name="robots" content="noindex"/>
+        </Head>
+        <DefaultErrorPage statusCode={404} />
+      </>
+  }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(pageToolbarDocs(props.uid, props.previewData.ref), [props])
   return (
@@ -33,6 +41,9 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'page',
+  getStaticPathsParams: {
+    fallback: true
+  },
   formatPath: (prismicDocument) => {
     return {
       params: {
