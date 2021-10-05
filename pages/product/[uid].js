@@ -15,13 +15,12 @@ import { useRouter } from "next/router";
 import next from "next";
 
 const ProductPage = (props) => {
-  const router = useRouter()
-  
-  if(router.isFallback){
-    return (
-      <h1>Loading fallback...</h1>
-    );
-  }
+  // const router = useRouter()
+  // if(router.isFallback){
+  //   return (
+  //     <h1>Loading fallback...</h1>
+  //   );
+  // }
   if(!props.data){
     return (
       <>
@@ -56,9 +55,9 @@ export const getStaticProps = useGetStaticProps({
 export const getStaticPaths = useGetStaticPaths({
   client: Client(),
   type: 'product-page',
-  getStaticPathsParams: {
-    fallback: true
-  },
+  // getStaticPathsParams: {
+  //   fallback: true
+  // },
   formatPath: (prismicDocument) => {
     return {
       params: {
