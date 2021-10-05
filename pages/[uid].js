@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 import Custom404 from "./404";
 
 import { useRouter } from 'next/router'
-import Loader from './../../components/Loader/Loader.js'
+import Loader from './../components/Loader/Loader.js'
 
 const Page = (props) => {
   const router = useRouter()
