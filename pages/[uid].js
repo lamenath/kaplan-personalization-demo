@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import useUpdatePreviewRef from '../tools/useUpdatePreviewRef' //import from where you store this file
 
 import { useEffect } from 'react'
-import Custom404 from "../404";
+import Custom404 from "./404";
 
 const Page = (props) => {
   if(!props.data){
