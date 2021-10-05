@@ -9,11 +9,16 @@ import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from 
 import Custom404 from "../404";
 import { useEffect } from 'react'
 
+import { useRouter } from 'next/router'
+import Loader from './../../components/Loader/Loader.js'
+
 const ProductPage = (props) => {
+  const router = useRouter()
+  if (router.isFallback) {
+    return <Loader />
+  }
   if(!props.id){
-    return (
-      Custom404()
-    );
+    return <Custom404 />
   }
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(productPageToolbarDocs(props.uid, props.previewData.ref), [props])
