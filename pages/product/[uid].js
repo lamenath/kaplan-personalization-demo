@@ -20,8 +20,8 @@ const ProductPage = (props) => {
   if(!props.id){
     return <Custom404 />
   }
-  //useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(productPageToolbarDocs(props.uid, props.previewData.ref), [props])
+  useUpdatePreviewRef(props.previewData.ref, props.id)
   return (
     <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
       <SliceZone {...props} resolver={resolver} />
