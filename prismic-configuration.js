@@ -28,6 +28,9 @@ export const linkResolver = (doc) => {
   if (doc.type === "blog-page") {
     return `/blog/${doc.uid}`;
   }
+  if (doc.type === "marketing-homepage") {
+    return `/blog/`;
+  }
   return "/";
 };
 
@@ -54,6 +57,10 @@ export const Router = {
     {
       "type":"blog-page",
       "path":"/blog/:uid"
+    },
+    {
+      "type":"marketing-homepage",
+      "path":"/blog/"
     },
     {
       "type":"home-page",

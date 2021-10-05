@@ -1,0 +1,21 @@
+{
+  "id": "marketing-homepage",
+  "label": "Marketing Homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "blog_section_three_column_cards": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
