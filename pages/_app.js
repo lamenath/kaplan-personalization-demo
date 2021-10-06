@@ -10,6 +10,8 @@ export default class MyApp extends NextApp {
     const client = Client();
     const menu = (await client.getSingle("menu")) || {};
     const footer = (await client.getSingle("footer")) || {};
+    const menuMarketing = (await client.getSingle("menu-marketing")) || {};
+    const footerMarketing = (await client.getSingle("footer-marketing")) || {};
     let categoriesClean = [];
     if(menu.data){
       const categoriesId = menu.data.menu_tabs.map(function(tab) {
@@ -45,6 +47,8 @@ export default class MyApp extends NextApp {
         //data: localTracker(data),
         menu: menu,
         footer: footer,
+        menuMarketing: menuMarketing,
+        footerMarketing: footerMarketing,
         categories: categoriesClean,
       },
     };
@@ -54,7 +58,7 @@ export default class MyApp extends NextApp {
     const { Component, pageProps, props } = this.props
     return (
       <UniformTracker trackerInstance={localTracker}>
-        <Component {...pageProps} menu={props.menu} footer={props.footer} categories={props.categories} />
+        <Component {...pageProps} menu={props.menu} menuMarketing={props.menuMarketing} footer={props.footer} footerMarketing={props.footerMarketing} categories={props.categories} />
       </UniformTracker>
     )
   }

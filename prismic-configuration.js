@@ -26,10 +26,10 @@ export const linkResolver = (doc) => {
     return `/product/${doc.uid}`;
   }
   if (doc.type === "blog-page") {
-    return `/blog/${doc.uid}`;
+    return `/marketing/${doc.uid}`;
   }
   if (doc.type === "marketing-homepage") {
-    return `/blog/`;
+    return `/marketing/`;
   }
   return "/";
 };
@@ -56,11 +56,11 @@ export const Router = {
     },
     {
       "type":"blog-page",
-      "path":"/blog/:uid"
+      "path":"/marketing/:uid"
     },
     {
       "type":"marketing-homepage",
-      "path":"/blog/"
+      "path":"/marketing/"
     },
     {
       "type":"home-page",

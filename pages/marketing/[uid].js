@@ -1,7 +1,7 @@
 import { Client } from "../../prismic-configuration";
 import SliceZone from "next-slicezone";
 import { useGetStaticProps, useGetStaticPaths } from "next-slicezone/hooks";
-import Layout from "../../components/Layout";
+import LayoutMarketing from "../../components/LayoutMarketing";
 import BlogLayout from "../../components/BlogLayout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 import { useEffect } from 'react'
@@ -23,11 +23,11 @@ if(!props.id){
 useUpdatePreviewRef(props.previewData.ref, props.id)
 useUpdateToolbarDocs(blogPageToolbarDocs(props.uid, props.previewData.ref), [props])
 return (
-  <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
+  <LayoutMarketing menuMarketing={props.menuMarketing} footerMarketing={props.footerMarketing} categories={props.categories}>
     <BlogLayout children={props.children} data={props.data}>
       <SliceZone {...props} resolver={resolver} />
     </BlogLayout>
-  </Layout>
+  </LayoutMarketing>
   );
 };
 

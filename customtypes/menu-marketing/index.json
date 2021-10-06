@@ -1,0 +1,35 @@
+{
+  "id": "menu-marketing",
+  "label": "Menu Marketing",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "logo": {
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "menu_with_icons": {
+              "type": "SharedSlice"
+            },
+            "menu_without_icon": {
+              "type": "SharedSlice"
+            },
+            "menu_simple": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

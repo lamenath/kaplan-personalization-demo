@@ -7,14 +7,15 @@ import Layout from "../../components/Layout";
 import useUpdatePreviewRef from '../../tools/useUpdatePreviewRef' //import from where you store this file
 
 import { useEffect } from 'react'
+import LayoutMarketing from "../../components/LayoutMarketing";
 
 const Page = (props) => {
   useUpdatePreviewRef(props.previewData.ref, props.id)
   useUpdateToolbarDocs(homepageToolbarDocs(props.uid, props.previewData.ref), [props])
   return (
-    <Layout menu={props.menu} footer={props.footer} categories={props.categories}>
+    <LayoutMarketing menuMarketing={props.menuMarketing} footerMarketing={props.footerMarketing} categories={props.categories}>
       <SliceZone {...props} resolver={resolver} />
-    </Layout>
+    </LayoutMarketing>
   );
 };
 
