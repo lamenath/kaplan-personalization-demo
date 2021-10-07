@@ -10,6 +10,11 @@
       "default-slice": {
         "primary": {}
       }
+    },
+    "PromoSectionFadingBackgroundTestimonials": {
+      "default-slice": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
