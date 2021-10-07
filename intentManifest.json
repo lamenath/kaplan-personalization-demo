@@ -3,33 +3,33 @@
         "sampleSize": 0,
         "intents": [
             {
-                "id": "vintageCameraAmateurs",
+                "id": "law",
                 "signals": [
                     {
                         "type": "PVI",
                         "freq": "always",
-                        "scope": "visit",
-                        "str": 25,
+                        "scope": "visitor",
+                        "str": 50,
                         "path": {
                             "cs": false,
-                            "expr": "/uniform/vintage-cameras",
-                            "type": "exact"
+                            "expr": "/law",
+                            "type": "contains"
                         }
                     }
                 ]
             },
             {
-                "id": "compactCameraAmateurs",
+                "id": "business",
                 "signals": [
                     {
                         "type": "PVI",
                         "freq": "always",
-                        "scope": "visit",
-                        "str": 25,
+                        "scope": "visitor",
+                        "str": 50,
                         "path": {
                             "cs": false,
-                            "expr": "/uniform/compact-cameras",
-                            "type": "exact"
+                            "expr": "/business",
+                            "type": "contains"
                         }
                     }
                 ]
