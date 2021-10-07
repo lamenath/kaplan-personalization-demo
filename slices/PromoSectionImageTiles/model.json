@@ -100,7 +100,7 @@
         "intent": {
           "type": "IntegrationFields",
           "config": {
-            "catalog": "demo-sm-next-ecom--intents",
+            "catalog": "kaplan-uniform-demo--intents",
             "label": "Uniform Intent"
           }
         },

@@ -1,5 +1,5 @@
 {
-  "apiEndpoint": "https://demo-sm-next-ecom.cdn.prismic.io/api/v2",
+  "apiEndpoint": "https://kaplan-uniform-demo.cdn.prismic.io/api/v2",
   "libraries": [
     "@/slices"
   ],

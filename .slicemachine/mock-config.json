@@ -1,6 +1,11 @@
 {
   "slices": {
-    "FooterColumn": {}
+    "FooterColumn": {},
+    "PromoSectionImageTiles": {
+      "default-slice": {
+        "primary": {}
+      }
+    }
   },
   "_cts": {
     "home-page": {},

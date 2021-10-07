@@ -2,36 +2,36 @@ export default async (req, res) => {
     
     try {
         const response = await fetch(
-            "https://uniform.app/api/v1/manifest?projectId=cbbfbe77-7a2b-4e5a-82bc-b256e6fb1153",
+            "https://uniform.app/api/v1/manifest?projectId=224a28b5-68e5-467f-b74a-72afea9e3f0b",
             {
             method: "post",
             headers: {
                 "x-api-key":
-                "uf1fpfqxs5cgrfq04h6x6p6umgg2d0l7uw872ta9n2j8508n64t4c7l2lw99z9up0m7xpa3306sxklnethwr2lvjs9hn2vj08",
-            },
+                "uf13ge4dz5a4xp5aremuzp2ja8wc3hraf5mxf3sha0xj4xerd56pn2gr0c7sjpww8y9lvy890wlwsunqgucahu7uh45cg3x0m"
+            }
             }
         );
         const data = await response.json()
 
         const responseResetPrismic = await fetch(
-            "https://if-api.prismic.io/if/write/demo-sm-next-ecom--intents/reset",
+            "https://if-api.prismic.io/if/write/kaplan-uniform-demo--intents/reset",
             {
             method: "post",
             headers: {
                 "Authorization":
-                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmlzbWljLmlvIiwiaWF0IjoxNjMyOTM4NzU3Mzk2LCJjYXRhbG9nSWQiOiJkZW1vLXNtLW5leHQtZWNvbS0taW50ZW50cyJ9.RYsHoE5kXV5yFb_vP_5MBtC5uyzegV8l_o2k5ZJBV-w",
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmlzbWljLmlvIiwiaWF0IjoxNjMzNTMzMjYyMzk1LCJjYXRhbG9nSWQiOiJrYXBsYW4tdW5pZm9ybS1kZW1vLS1pbnRlbnRzIn0.tNniWNYcqHXRy91qhN1rUZGaXkKDfjXKhIB5x02vcRU",
                 "Content-Type": "application/json"
             }
             }
         );
 
         const responsePrismic = await fetch(
-            "https://if-api.prismic.io/if/write/demo-sm-next-ecom--intents",
+            "https://if-api.prismic.io/if/write/kaplan-uniform-demo--intents",
             {
             method: "post",
             headers: {
                 "Authorization":
-                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmlzbWljLmlvIiwiaWF0IjoxNjMyOTM4NzU3Mzk2LCJjYXRhbG9nSWQiOiJkZW1vLXNtLW5leHQtZWNvbS0taW50ZW50cyJ9.RYsHoE5kXV5yFb_vP_5MBtC5uyzegV8l_o2k5ZJBV-w",
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJwcmlzbWljLmlvIiwiaWF0IjoxNjMzNTMzMjYyMzk1LCJjYXRhbG9nSWQiOiJrYXBsYW4tdW5pZm9ybS1kZW1vLS1pbnRlbnRzIn0.tNniWNYcqHXRy91qhN1rUZGaXkKDfjXKhIB5x02vcRU",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(functionmapIntents(data.site.intents))
@@ -57,7 +57,7 @@ function functionmapIntents(intents){
             id:intent.id,
             title:intent.id || "",
             description:intent.id || "",
-            image_url:'https://pbs.twimg.com/profile_images/1235674864649830400/kd3pN6iU_400x400.jpg',
+            image_url:'https://pbs.twimg.com/profile_images/1127885847364345859/BOkP7M2k_400x400.jpg',
             last_update:Date.now(),
             blob:{
                 [intent.id]:{

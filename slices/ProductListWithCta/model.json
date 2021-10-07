@@ -34,7 +34,7 @@
         "topProduct": {
           "type": "IntegrationFields",
           "config": {
-            "catalog": "demo-sm-next-ecom--products",
+            "catalog": "kaplan-uniform-demo--products",
             "label": "Top Product"
           }
         },
