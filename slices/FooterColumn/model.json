@@ -14,7 +14,7 @@
         "section_title": {
           "config": {
             "label": "Section Title",
-            "placeholder": ""
+            "placeholder": "Default Slice"
           },
           "type": "Text"
         }
