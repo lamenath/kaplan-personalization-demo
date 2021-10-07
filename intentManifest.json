@@ -6,6 +6,18 @@
                 "id": "law",
                 "signals": [
                     {
+                        "type": "QS",
+                        "freq": "always",
+                        "scope": "visit",
+                        "str": 1000,
+                        "value": {
+                            "cs": false,
+                            "expr": "law-courses-2021",
+                            "type": "exact"
+                        },
+                        "parameter": "cid"
+                    },
+                    {
                         "type": "PVI",
                         "freq": "always",
                         "scope": "visitor",
@@ -21,6 +33,18 @@
             {
                 "id": "business",
                 "signals": [
+                    {
+                        "type": "QS",
+                        "freq": "always",
+                        "scope": "visitor",
+                        "str": 1000,
+                        "value": {
+                            "cs": false,
+                            "expr": "business-courses-2021",
+                            "type": "exact"
+                        },
+                        "parameter": "cid"
+                    },
                     {
                         "type": "PVI",
                         "freq": "always",

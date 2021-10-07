@@ -30,13 +30,26 @@
         }
       }
     },
-    "PromoSectionImageTiles": {
+    "Personalized Tiles": {
       "slices1": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
             "promo_section_image_tiles": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "Personalized Banners": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero_banner": {
               "type": "SharedSlice"
             }
           }

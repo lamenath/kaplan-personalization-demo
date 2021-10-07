@@ -50,6 +50,20 @@
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "intent": {
+          "type": "IntegrationFields",
+          "config": {
+            "catalog": "kaplan-uniform-demo--intents",
+            "label": "Uniform Intent"
+          }
+        },
+        "personalisationid": {
+          "config": {
+            "label": "personalisationid",
+            "placeholder": "Mapping ID"
+          },
+          "type": "Text"
         }
       },
       "items": {}

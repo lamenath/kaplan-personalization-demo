@@ -5,6 +5,11 @@
       "default-slice": {
         "primary": {}
       }
+    },
+    "PromoSectionWithBackgroundImage": {
+      "default-slice": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
